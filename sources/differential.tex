@@ -81,9 +81,11 @@
     n$-Matrix $$J_f(x)=(\partial_jf_i(x))_{\substack{1\leq i\leq m\\1\leq j\leq
     n}}$$
     heisst Jacobimatrix von $f$ bei $x$.\\
-\definition{3.3.11}{Gradient und Divergent}
-  \textbf{Gradient}: Wenn für die Funktion $f:U\rightarrow \mathbb R$ alle partiellen Ableitungen existieren für $x_0\in U$, dann ist der Vektor $$\begin{pmatrix}\partial_{x_1}f(x_0)\\\vdots\\\partial_{x_n}f(x_0)\end{pmatrix}$$
-    \textbf{Divergent} Wenn für eine Funktion $f=\{f_1,...,f_m\}:U\rightarrow\mathbb R^m$ alle partiellen ableitungen für alle $f_i$ bei $x_0\in U$ existieren, ist der Divergent die Trace der Jakobimatrix $$div(f)(x_0)=Tr(J_f(x_0))$$
+\definition{3.3.11(1)}{Gradient}
+  Wenn für die Funktion $f:U\rightarrow \mathbb R$ alle partiellen Ableitungen existieren für $x_0\in U$, dann gilt: $$grad\ f(x_0) = \bigtriangledown f(x_0)= \begin{pmatrix}\partial_{x_1}f(x_0)\\\vdots\\\partial_{x_n}f(x_0)\end{pmatrix}$$
+\definition{3.3.11(2)}{Divergenz}
+  Die Divergenz von $f: U\rightarrow \mathbb{R}^n$ bei $y\in U$ ist $$div(f(y))=\partial_1 f_1(y) + \dots + \partial_n f_n(y)$$
+  Wenn für eine Funktion $f=\{f_1,...,f_m\}:U\rightarrow\mathbb R^m$ alle partiellen ableitungen für alle $f_i$ bei $x_0\in U$ existieren, ist der Divergent die Trace der Jakobimatrix $$div(f)(x_0)=Tr(J_f(x_0))$$
 \subsection{Das Differential}
 \definition{3.4.2}{Differenzierbarkeit}
   Wenn \(U\in\mathbb R^n\) eine offene Menge, \(f:U\rightarrow R^m\) eine Funktion und $A: \mathbb R^n\rightarrow\mathbb R^m$ eine affine Abbildung ist, dann ist $f$ bei $x_0\in U$ differenzierbar mit Differenzial A, falls:
